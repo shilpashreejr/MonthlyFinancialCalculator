@@ -1,0 +1,73 @@
+/*general style*/
+    html, body 
+    { 
+        margin:0; 
+        padding:0; 
+        height:100%;
+    }
+    header, section, footer 
+    {
+        display: block;
+    }
+/*header area*/
+    header 
+    {
+        /* position: absolute; */
+        height: 100px; 
+        background: #ff0055; 
+        width: 100%;
+    }
+    h1, img { display:inline; }
+    h1
+    { 
+        position: absolute;
+        padding-top: 10px;
+    }
+    img
+    {
+        width: 90px;
+        height: 90px;
+        /* background: url(logo.jpeg); */
+        -moz-background-size:90px 90px;
+        background-size:90px 90px;
+        background-repeat:no-repeat;
+        margin:5px 25px ;
+        float:left;
+        border-radius: 15px 15px;
+     }
+
+
+/*section area*/
+    section 
+    { 
+        clear: both;
+        width: 100%;
+        background: #CCC; 
+    }
+    hgroup h2 
+    {
+        color: #000; 
+        padding: 10px 0 0 10px;
+    }
+    h3 { padding-left: 10px}
+    article 
+    {
+        width:auto; 
+        background: #CCC;
+    }
+    select 
+    {
+       padding-left: 10px; 
+    }
+/*footer area*/
+    footer 
+    {
+        height: 60px; 
+        background: #007380; 
+        width: 100%; 
+        bottom:0px;
+    }
+    footer p 
+    {
+        padding: 10px 0 0 10px;
+    }

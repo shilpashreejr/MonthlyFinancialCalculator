@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8"></meta>
+<title>PagerDuty</title>
+<link href="pagerduty.css" rel="stylesheet"/>
+</head>
+<body onload="curmonth()">
+    <div id="wrapper">
+        <header>
+                <img src="logo.jpeg"></img>
+                <h1>Financial Tracker</h1>
+        </header>
+        <section>    
+            <article>
+                <hgroup>
+                    <h2>Financial Report</h2>
+                    <span id="currentmonth"></span>
+                    <h3>Total Income: </h3> 
+                    <span id="totalincome">100</span>
+                    <h3>Total Expenses: </h3>
+                    <span id="totalexp">100</span>
+                    <h3>New Balance: </h3>
+                    <span id="newbal">100</div>
+                </hgroup>
+            </article>
+        </section>
+        <section>
+            
+            <article>
+                <hgroup>
+                    <h2>Add New Expenses</h2>
+                </hgroup>
+                Category:<select id="expcategory">
+                    <option value="Restaurants">Restaurants</option>
+                    <option value="Groceries">Groceries</option>
+                    <option value="Work Expenses">Work Expenses</option>
+                    <option value="Entertainment">Entertainment</option>
+                    <option value="Paycheques">Paycheques</option>
+                    <option value="Rent">Rent</option>
+                    <option value="Utilities">Utilities</option>
+                </select>
+                Description:<input id="expdesc"> </input>
+                Amount:<input id="expamount"></input>
+                <input type="button" value="SAVE" onclick="expsave()"></input>
+                <span id="expsave"></span>
+            </article>
+        </section>
+        <section>
+            <article>
+                <hgroup>
+                    <h2>Add New Deposit</h2>
+                </hgroup>
+            </article>
+            Category:<select id="incomeCategory">
+                    <option value="Paycheck">Paycheck</option>
+                    <option value="Other Income">Other Income</option>
+                </select>
+                Description:<input id="incomedesc"> </input>
+                Amount:<input id="incomeamount"></input>
+                <input type="button" value="SAVE" onclick="depsave()"></input>
+                <span id="depsave"></span>
+        </section>
+        
+        <footer>
+                <p>Footer</p>
+        </footer>
+        
+    </div>
+
+</body>
+ <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+ <script src="pagerduty.js"></script>
+ <script src="lscache-master/lscache.js"></script>
+</html>
